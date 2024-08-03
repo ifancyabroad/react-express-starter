@@ -1,0 +1,8 @@
+array=( backend frontend )
+for i in "${array[@]}"
+do
+  echo "Running lint-staged on $i"
+  cd $i
+  npx lint-staged
+  cd ..
+done

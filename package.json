@@ -1,0 +1,22 @@
+{
+  "name": "react-express-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "backend": "npm run dev -w backend",
+    "frontend": "npm run dev -w frontend",
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "prepare": "husky"
+  },
+  "author": "Edgar Nightingale",
+  "license": "ISC",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "husky": "^9.1.4"
+  }
+}

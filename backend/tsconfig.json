@@ -1,0 +1,26 @@
+{
+	"compilerOptions": {
+		"target": "es6",
+		"module": "commonjs",
+		"esModuleInterop": true,
+		"noImplicitAny": true,
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"sourceMap": true,
+		"outDir": "./dist",
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"strictPropertyInitialization": false,
+		"baseUrl": "src",
+		"paths": {
+			"@common/*": ["common/*"],
+			"@middleware/*": ["middleware/*"],
+			"@models/*": ["models/*"],
+			"@routes/*": ["routes/*"],
+			"@services/*": ["services/*"],
+			"@controllers/*": ["controllers/*"]
+		}
+	},
+	"include": ["src"],
+	"exclude": ["node_modules"]
+}

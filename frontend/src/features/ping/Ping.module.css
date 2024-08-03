@@ -1,0 +1,14 @@
+.container {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	font-size: calc(10px + 2vmin);
+}
+
+.ping {
+	color: #fff;
+}
+
+.pong {
+	color: #000;
+}
